@@ -77,7 +77,7 @@ class ProductController extends AbstractController
 
         $positions = $this->getDoctrine()
             ->getRepository( TechnologyMapPosition::class)
-            ->findBy(['technology_map'=>$map->getId()]);
+            ->findBy(['technology_map'=>$map[0]->getId()]);
 
         if (empty($positions)) {
 
@@ -87,7 +87,8 @@ class ProductController extends AbstractController
 
         }
 
-        return $this->render('test.html.twig', ['product'=>$product, 'materials'=>$materials]);
+        return $this->render('test.html.twig', ['product'=>$product,
+            'materials'=>$materials, 'positions'=>$positions]);
     }
 
     /**

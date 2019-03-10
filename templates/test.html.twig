@@ -81,10 +81,14 @@
 
                             <ul class="list-group">
 
-                                {% for currentMaterial in materials %}
-                                    {% positionOnMap %}
+                                {% for currentPosition in positions %}
+
+                                    {% set positionMap = currentPosition %}
+
+                                    {% block positionOnMap %}
                                         {{ parent()}}
                                     {% endblock %}
+
                                 {% endfor %}
 
                             </ul>

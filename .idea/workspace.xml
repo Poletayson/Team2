@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6a90e256-db95-402e-a035-8c63270b6e2e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/editButton/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/editButton/product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/onePositionMap.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/onePositionMap.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/test.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/0QI308P5Ua/A/T/ECUvrtB2vGvkEYDMSooQ" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/0QI308P5Ua/A/T/ECUvrtB2vGvkEYDMSooQ" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/0QI308P5Ua/K/U/KCjhigNvJvBqiKjvR4EA" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/0QI308P5Ua/K/U/KCjhigNvJvBqiKjvR4EA" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/0QI308P5Ua/N/9/VmF6GGzM4Tj6X1GmMg4g" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/0QI308P5Ua/N/9/VmF6GGzM4Tj6X1GmMg4g" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/pools/0QI308P5Ua/Q/W/C7pVUqS11QgNHwyX8JFw" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/pools/0QI308P5Ua/Q/W/C7pVUqS11QgNHwyX8JFw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/var/cache/dev/twig/f3/f30263fe58936ade89978776241aef09d7ed14baa0027a953027478b2411cde5.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/cache/dev/twig/f3/f30263fe58936ade89978776241aef09d7ed14baa0027a953027478b2411cde5.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,23 +32,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/ProductController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="89" column="95" lean-forward="true" selection-start-line="89" selection-start-column="95" selection-end-line="89" selection-end-column="95" />
+            <state relative-caret-position="171">
+              <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
               <folding>
                 <element signature="e#34#58#0#PHP" expanded="true" />
+                <element signature="e#299#640#0#PHP" />
+                <element signature="e#1096#1755#0#PHP" />
+                <element signature="e#1857#1964#0#PHP" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/editButton/product.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -60,17 +59,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/TechnologyMapPosition.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="27" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="27" />
+            <state relative-caret-position="-320">
+              <caret line="40" column="29" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/test.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+            <state relative-caret-position="281">
+              <caret line="83" column="67" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -78,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/onePositionMap.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="3" selection-end-column="16" />
+            <state relative-caret-position="680">
+              <caret line="40" column="122" selection-start-line="40" selection-start-column="122" selection-end-line="40" selection-end-column="122" />
             </state>
           </provider>
         </entry>
@@ -96,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/Material.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-167">
+            <state relative-caret-position="190">
               <caret line="55" column="35" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="35" />
             </state>
           </provider>
@@ -105,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/oneNodeInList.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
+            <state relative-caret-position="85">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -156,8 +155,8 @@
         <option value="$PROJECT_DIR$/templates/oneNodeInList.html" />
         <option value="$PROJECT_DIR$/templates/oneNodeInList.html.twig" />
         <option value="$PROJECT_DIR$/public/js/editButton/product.js" />
-        <option value="$PROJECT_DIR$/src/Controller/ProductController.php" />
         <option value="$PROJECT_DIR$/templates/onePositionMap.html" />
+        <option value="$PROJECT_DIR$/src/Controller/ProductController.php" />
         <option value="$PROJECT_DIR$/templates/onePositionMap.html.twig" />
         <option value="$PROJECT_DIR$/templates/test.html.twig" />
       </list>
@@ -310,12 +309,12 @@
       <updated>1551804121989</updated>
       <workItem from="1551804128174" duration="1307000" />
       <workItem from="1551953070207" duration="1352000" />
-      <workItem from="1551954481840" duration="82766000" />
+      <workItem from="1551954481840" duration="85791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85425000" />
+    <option name="totallyTimeSpent" value="88450000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -376,6 +375,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/ProductController.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Kernel.php">
@@ -483,27 +493,6 @@
     <entry file="file://$PROJECT_DIR$/src/Repository/TechnologyMapPositionRepository.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Material.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
-          <caret line="55" column="35" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/oneNodeInList.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/product.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="163" column="8" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/editButton/product.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -518,20 +507,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/TechnologyMapPosition.php">
+    <entry file="file://$PROJECT_DIR$/templates/oneNodeInList.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="27" />
+        <state relative-caret-position="85">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ProductController.php">
+    <entry file="file://$PROJECT_DIR$/src/Entity/Material.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="89" column="95" lean-forward="true" selection-start-line="89" selection-start-column="95" selection-end-line="89" selection-end-column="95" />
-          <folding>
-            <element signature="e#34#58#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -542,17 +528,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/TechnologyMapPosition.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-320">
+          <caret line="40" column="29" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/product.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="163" column="8" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/onePositionMap.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="3" selection-end-column="16" />
+        <state relative-caret-position="680">
+          <caret line="40" column="122" selection-start-line="40" selection-start-column="122" selection-end-line="40" selection-end-column="122" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/test.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+        <state relative-caret-position="281">
+          <caret line="83" column="67" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding>
+            <element signature="e#34#58#0#PHP" expanded="true" />
+            <element signature="e#299#640#0#PHP" />
+            <element signature="e#1096#1755#0#PHP" />
+            <element signature="e#1857#1964#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
