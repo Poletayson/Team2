@@ -1,0 +1,13 @@
+#index:
+#    path: /
+#    controller: App\Controller\Dudos::asd
+#
+
+
+asd:
+  path: /diman2
+  controller: App\Controller\Dudos::asd
+
+hello:
+  path: /diman
+  controller: App\Controller\TovarController::index

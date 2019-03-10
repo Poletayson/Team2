@@ -1,0 +1,219 @@
+
+
+{% extends "product.html.twig" %}
+{% use "oneNodeInList.html.twig" %}
+
+
+{% block content%}
+
+    <div id="content-wrapper" class="myColorElem" >
+
+        <div class="row">
+            <span class="lg-col-12 sm-col-4 h1 ml-4">{{ product.title }}</span>
+        </div>
+
+        <div class="row bg-white m-3 p-2">
+
+            <div class="d-inline col-md-4 col-sm-12">
+
+                <img src="{{ asset( product.image ) }}" alt="Example" class="img-fluid"/>
+
+            </div>
+
+            <div class="d-inline col-md-8 col-sm-12">
+                <div class="row-centered">
+                    <div class="sm-col-12 lg-col-8 mx-auto">
+                        <input type="checkbox" id="hd-1" class="hide"/>
+                        <label for="hd-1" class="h3">Характеристики</label>
+                        <div class="row">
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Название</label>
+
+                            <div class="col-sm-5">
+                                <input class="form-control form-control-sm" id="title" value="{{ product.title }}">
+                            </div>
+
+                            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Код товара</label>
+                            <div class="col-sm-5">
+                                <input class="form-control form-control-sm" id="code" placeholder="000000" value="{{ product.code }}">
+                            </div>
+
+                            <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Количество на складе</label>
+                            <div class="col-sm-5">
+                                <input class="form-control form-control-sm" id="balance" placeholder="0" value="{{ product.balance }}">
+                            </div>
+
+                            <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Описание товара</label>
+                            <div class="col-sm-12">
+                                  <textarea id="description" class="form-control text-justify"  rows="5">{{ product.description }}</textarea>
+                            </div>
+
+                            <div class="col-sm-12 text-center">
+
+                                {#<form name="test">#}
+                                    <input type="submit" class="btn btn-success my-2" onclick="saveInfo( {{ product.id }})" name="name" value="Применить" />
+                                {#</form>#}
+
+                            </div>
+
+                        </div>
+                        <br/>
+                        <input type="checkbox" id="hd-2" class="hide"/>
+                        <label for="hd-2" class="h3">Технологическая карта</label>
+                        <div>
+                            <button type="button" class="btn btn-success w-100" data-toggle="dropdown">
+                                <span class="lg-col-12 sm-col-4 h1"> <i class="fas fa-plus-circle"></i> Добавить материал</span>
+                            </button>
+                            <ul class="dropdown-menu scrollable-menu w-50" role="menu">
+
+                                {% for currentMaterial in materials %}
+
+                                    {% set material = currentMaterial %}
+                                    {#{% set code_material = currentMaterial.getCodeMaterial() %}#}
+                                    {#{% set img_material = currentMaterial.getImg() %}#}
+
+                                    {% block oneIntem %}
+
+                                        {{ parent()}}
+
+                                    {% endblock %}
+
+                                {% endfor %}
+                                {#<li>#}
+                                    {#<button class="w-100 row  p-2 mx-auto">#}
+                                        {#<div class="col-lg-2  d-inline">#}
+                                            {#<img src="img/catalog/1.jpg" class="img-fluid">#}
+                                        {#</div>#}
+
+                                        {#<div class="row col-lg-10 d-inline ml-2">#}
+                                            {#<div class="col-lg-11 d-block col-12">#}
+                                                {#<p class="myTextFont h3">#}
+                                                    {#Ножки#}
+                                                {#</p>#}
+                                            {#</div>#}
+
+                                            {#<div class="d-block col-11">#}
+                                                {#<div class="col-lg-5 d-inline col-5">#}
+                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification"> Код товара: </span>#}
+                                                {#</div>#}
+                                                {#<div class="col-lg-4 d-inline col-4">#}
+                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification">654045</span>#}
+                                                {#</div>#}
+                                            {#</div>#}
+
+                                            {#<div class="d-block col-11">#}
+                                                {#<div class="col-lg-5 d-inline col-5">#}
+                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification"> Требуется: </span>#}
+                                                {#</div>#}
+                                                {#<div class="col-lg-4 d-inline col-4">#}
+                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification"> 4 шт.</span>#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                    {#</button>#}
+                                {#</li>#}
+
+                                {#<li>#}
+                                    {#<button class="w-100 row p-2 mx-auto">#}
+                                        {#<div class="col-lg-2  d-inline">#}
+                                            {#<img src="img/catalog/1.jpg" class="img-fluid">#}
+                                        {#</div>#}
+
+                                        {#<div class="row col-lg-10 d-inline ml-2">#}
+                                            {#<div class="col-lg-11 d-block col-12">#}
+                                                {#<p class="myTextFont h3">#}
+                                                    {#Белая краска#}
+                                                {#</p>#}
+                                            {#</div>#}
+
+                                            {#<div class="d-block col-11">#}
+                                                {#<div class="col-lg-5 d-inline col-5">#}
+                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification"> Код товара: </span>#}
+                                                {#</div>#}
+                                                {#<div class="col-lg-4 d-inline col-4">#}
+                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification">654045</span>#}
+                                                {#</div>#}
+                                            {#</div>#}
+
+                                            {#<div class="d-block col-11">#}
+                                                {#<div class="col-lg-5 d-inline col-5">#}
+                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification"> Требуется: </span>#}
+                                                {#</div>#}
+                                                {#<div class="col-lg-4 d-inline col-4">#}
+                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification"> 1 кг.</span>#}
+                                                {#</div>#}
+                                            {#</div>#}
+                                        {#</div>#}
+                                    {#</button>#}
+                                {#</li>#}
+                            </ul>
+
+                            <ul class="list-group">
+
+                                <li class="list-group-item text-center">
+                                    <div class="row">
+                                        <div class="w-100 col-lg-10 col-md-12 row">
+                                            <div class="col-lg-2  d-inline">
+                                                <img src="img/catalog/1.jpg" class="img-fluid">
+                                            </div>
+
+                                            <div class="row col-lg-10 d-inline ml-2">
+                                                <div class="col-lg-11 d-block col-12">
+                                                    <p class="myTextFont h3">
+                                                        Белая краска
+                                                    </p>
+                                                </div>
+
+                                                <div class="d-block col-11">
+                                                    <div class="col-lg-5 d-inline col-5">
+                                                        <span class="myTextColorSpecification myTextFont myTextSizeSpecification"> Код товара: </span>
+                                                    </div>
+                                                    <div class="col-lg-4 d-inline col-4">
+                                                        <span class="myTextColorSpecification myTextFont myTextSizeSpecification">654045</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-block col-11">
+                                                    <div class="col-lg-5 d-inline col-5">
+                                                        <span class="myTextColorSpecification myTextFont myTextSizeSpecification"> Требуется: </span>
+                                                    </div>
+                                                    <div class="col-lg-4 d-inline col-4">
+                                                        <span class="myTextColorSpecification myTextFont myTextSizeSpecification"> 1 кг.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-2 col-md-12 col-sm-12">
+                                            <p class="myTextFont h5">
+                                                Количество:
+                                            </p>
+                                            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="2">
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-white mx-2 ">
+            <div class="row">
+
+            </div>
+
+
+        </div>
+        <!-- /.content-wrapper -->
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/editButton/product.js') }}"></script>
+{% endblock %}
