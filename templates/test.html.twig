@@ -2,7 +2,7 @@
 
 {% extends "product.html.twig" %}
 {% use "oneNodeInList.html.twig" %}
-
+{% use "onePositionMap.html.twig" %}
 
 {% block content%}
 
@@ -68,8 +68,6 @@
                                 {% for currentMaterial in materials %}
 
                                     {% set material = currentMaterial %}
-                                    {#{% set code_material = currentMaterial.getCodeMaterial() %}#}
-                                    {#{% set img_material = currentMaterial.getImg() %}#}
 
                                     {% block oneIntem %}
 
@@ -78,120 +76,17 @@
                                     {% endblock %}
 
                                 {% endfor %}
-                                {#<li>#}
-                                    {#<button class="w-100 row  p-2 mx-auto">#}
-                                        {#<div class="col-lg-2  d-inline">#}
-                                            {#<img src="img/catalog/1.jpg" class="img-fluid">#}
-                                        {#</div>#}
 
-                                        {#<div class="row col-lg-10 d-inline ml-2">#}
-                                            {#<div class="col-lg-11 d-block col-12">#}
-                                                {#<p class="myTextFont h3">#}
-                                                    {#Ножки#}
-                                                {#</p>#}
-                                            {#</div>#}
-
-                                            {#<div class="d-block col-11">#}
-                                                {#<div class="col-lg-5 d-inline col-5">#}
-                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification"> Код товара: </span>#}
-                                                {#</div>#}
-                                                {#<div class="col-lg-4 d-inline col-4">#}
-                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification">654045</span>#}
-                                                {#</div>#}
-                                            {#</div>#}
-
-                                            {#<div class="d-block col-11">#}
-                                                {#<div class="col-lg-5 d-inline col-5">#}
-                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification"> Требуется: </span>#}
-                                                {#</div>#}
-                                                {#<div class="col-lg-4 d-inline col-4">#}
-                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification"> 4 шт.</span>#}
-                                                {#</div>#}
-                                            {#</div>#}
-                                        {#</div>#}
-                                    {#</button>#}
-                                {#</li>#}
-
-                                {#<li>#}
-                                    {#<button class="w-100 row p-2 mx-auto">#}
-                                        {#<div class="col-lg-2  d-inline">#}
-                                            {#<img src="img/catalog/1.jpg" class="img-fluid">#}
-                                        {#</div>#}
-
-                                        {#<div class="row col-lg-10 d-inline ml-2">#}
-                                            {#<div class="col-lg-11 d-block col-12">#}
-                                                {#<p class="myTextFont h3">#}
-                                                    {#Белая краска#}
-                                                {#</p>#}
-                                            {#</div>#}
-
-                                            {#<div class="d-block col-11">#}
-                                                {#<div class="col-lg-5 d-inline col-5">#}
-                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification"> Код товара: </span>#}
-                                                {#</div>#}
-                                                {#<div class="col-lg-4 d-inline col-4">#}
-                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification">654045</span>#}
-                                                {#</div>#}
-                                            {#</div>#}
-
-                                            {#<div class="d-block col-11">#}
-                                                {#<div class="col-lg-5 d-inline col-5">#}
-                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification"> Требуется: </span>#}
-                                                {#</div>#}
-                                                {#<div class="col-lg-4 d-inline col-4">#}
-                                                    {#<span class="myTextColorSpecification myTextFont myTextSizeSpecification"> 1 кг.</span>#}
-                                                {#</div>#}
-                                            {#</div>#}
-                                        {#</div>#}
-                                    {#</button>#}
-                                {#</li>#}
                             </ul>
 
                             <ul class="list-group">
 
-                                <li class="list-group-item text-center">
-                                    <div class="row">
-                                        <div class="w-100 col-lg-10 col-md-12 row">
-                                            <div class="col-lg-2  d-inline">
-                                                <img src="img/catalog/1.jpg" class="img-fluid">
-                                            </div>
+                                {% for currentMaterial in materials %}
+                                    {% positionOnMap %}
+                                        {{ parent()}}
+                                    {% endblock %}
+                                {% endfor %}
 
-                                            <div class="row col-lg-10 d-inline ml-2">
-                                                <div class="col-lg-11 d-block col-12">
-                                                    <p class="myTextFont h3">
-                                                        Белая краска
-                                                    </p>
-                                                </div>
-
-                                                <div class="d-block col-11">
-                                                    <div class="col-lg-5 d-inline col-5">
-                                                        <span class="myTextColorSpecification myTextFont myTextSizeSpecification"> Код товара: </span>
-                                                    </div>
-                                                    <div class="col-lg-4 d-inline col-4">
-                                                        <span class="myTextColorSpecification myTextFont myTextSizeSpecification">654045</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="d-block col-11">
-                                                    <div class="col-lg-5 d-inline col-5">
-                                                        <span class="myTextColorSpecification myTextFont myTextSizeSpecification"> Требуется: </span>
-                                                    </div>
-                                                    <div class="col-lg-4 d-inline col-4">
-                                                        <span class="myTextColorSpecification myTextFont myTextSizeSpecification"> 1 кг.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-12 col-sm-12">
-                                            <p class="myTextFont h5">
-                                                Количество:
-                                            </p>
-                                            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="2">
-                                        </div>
-
-                                    </div>
-                                </li>
                             </ul>
 
                         </div>

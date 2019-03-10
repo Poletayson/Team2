@@ -7,7 +7,8 @@ function saveInfo( id ) {
     var balance = document.getElementById("balance").value;
     var description = document.getElementById("description").value;
 
-    let dataString = "title=" + title + "&code=" + code;
+    let dataString = "title=" + title + "&code=" + code +
+        "&balance=" + balance + "&description=" + description;
 
     $.ajax({
         type: "POST",
@@ -16,7 +17,7 @@ function saveInfo( id ) {
         cache: false,
         success: function(html)
         {
-            alert("Спасибо за заявку!");
+            alert(html);
         }
     });
 }

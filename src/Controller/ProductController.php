@@ -6,8 +6,8 @@ use App\Entity\Material;
 use App\Entity\Product;
 use App\Entity\TechnologyMap;
 use App\Entity\TechnologyMapPosition;
-use http\Env\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 
@@ -63,6 +63,30 @@ class ProductController extends AbstractController
             );
         }
 
+        $map = $this->getDoctrine()
+            ->getRepository( TechnologyMap::class)
+            ->findBy(['product'=>$id, 'date_end'=>null]);
+
+        if (empty($map)) {
+
+            throw $this->createNotFoundException(
+                'No map!'
+            );
+
+        }
+
+        $positions = $this->getDoctrine()
+            ->getRepository( TechnologyMapPosition::class)
+            ->findBy(['technology_map'=>$map->getId()]);
+
+        if (empty($positions)) {
+
+            throw $this->createNotFoundException(
+                'No positions on map!'
+            );
+
+        }
+
         return $this->render('test.html.twig', ['product'=>$product, 'materials'=>$materials]);
     }
 
@@ -71,8 +95,27 @@ class ProductController extends AbstractController
      */
     public function save($id){
 
-//        $title = $_POST['title'];
-        return "xyu";
+        $em = $this->getDoctrine()->getManager();
+        $product = $em->getRepository(Product::class)->find($id);
+
+        if (!$product) {
+            throw $this->createNotFoundException(
+                'No product found for id '.$id
+            );
+        }
+
+        $product->setTitle($_POST['title']);
+        $product->setDescription($_POST['description']);
+        $product->setCode($_POST['code']);
+        $product->setBalance($_POST['balance']);
+
+        $em->flush();
+
+        return new Response("Success!");
+//        return $this->redirectToRoute('product_show', [
+//            'id' => $product->getId()
+//        ]);
+
     }
 
 }
