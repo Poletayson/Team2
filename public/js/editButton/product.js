@@ -1,6 +1,4 @@
 function changeAmountMaterial ( index ) {
-    alert( "Новое значение = " + document.getElementById(index).value );
-
     let dataString = "id=" + index +"&amount=" + document.getElementById(index).value ;
 
     $.ajax({
@@ -11,6 +9,13 @@ function changeAmountMaterial ( index ) {
         success: function(html)
         {
             alert(html);
+            let result = html.toString();
+            if( result.localeCompare("Element deleted!") == 0) {
+
+                let el = document.getElementById('position' + index);
+                el.parentNode.removeChild(el);
+
+            }
         }
     });
 
@@ -21,7 +26,7 @@ function addInMap( idMaterial, idMap ){
 
     $.ajax({
         type: "POST",
-        url: "/product/" + "1" + "/addMaterial",
+        url: "/product/" + "materials" + "/addMaterialInTechnologyMap",
         data: dataString,
         cache: false,
         success: function(html)

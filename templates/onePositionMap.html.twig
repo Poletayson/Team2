@@ -1,5 +1,5 @@
 {% block positionOnMap %}
-<li class="list-group-item text-center">
+<li class="list-group-item text-center" id="position{{ positionMap.getId() }}">
     <div class="row">
         <div class="w-100 row mx-auto">
             <div class="col-lg-2 col-md-4 d-inline">
@@ -36,6 +36,7 @@
                 {#</div>#}
 
             </div>
+
             <div class="col-lg-2  col-md-12 d-inline">
                 <p class="myTextFont h5">Кол-во:</p>
                 <input id="{{ positionMap.getId() }}" onchange="changeAmountMaterial( {{ positionMap.getId() }} )"

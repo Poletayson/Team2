@@ -36,7 +36,9 @@ class __TwigTemplate_8148624079c907dbde6bc29e40ef7031e3730551bc3437b86465c5ce1e9
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "positionOnMap"));
 
         // line 2
-        echo "<li class=\"list-group-item text-center\">
+        echo "<li class=\"list-group-item text-center\" id=\"position";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["positionMap"]) || array_key_exists("positionMap", $context) ? $context["positionMap"] : (function () { throw new Twig_Error_Runtime('Variable "positionMap" does not exist.', 2, $this->source); })()), "getId", [], "method"), "html", null, true);
+        echo "\">
     <div class=\"row\">
         <div class=\"w-100 row mx-auto\">
             <div class=\"col-lg-2 col-md-4 d-inline\">
@@ -90,17 +92,18 @@ class __TwigTemplate_8148624079c907dbde6bc29e40ef7031e3730551bc3437b86465c5ce1e9
         // line 37
         echo "
             </div>
+
             <div class=\"col-lg-2  col-md-12 d-inline\">
                 <p class=\"myTextFont h5\">Кол-во:</p>
                 <input id=\"";
-        // line 41
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["positionMap"]) || array_key_exists("positionMap", $context) ? $context["positionMap"] : (function () { throw new Twig_Error_Runtime('Variable "positionMap" does not exist.', 41, $this->source); })()), "getId", [], "method"), "html", null, true);
+        // line 42
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["positionMap"]) || array_key_exists("positionMap", $context) ? $context["positionMap"] : (function () { throw new Twig_Error_Runtime('Variable "positionMap" does not exist.', 42, $this->source); })()), "getId", [], "method"), "html", null, true);
         echo "\" onchange=\"changeAmountMaterial( ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["positionMap"]) || array_key_exists("positionMap", $context) ? $context["positionMap"] : (function () { throw new Twig_Error_Runtime('Variable "positionMap" does not exist.', 41, $this->source); })()), "getId", [], "method"), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["positionMap"]) || array_key_exists("positionMap", $context) ? $context["positionMap"] : (function () { throw new Twig_Error_Runtime('Variable "positionMap" does not exist.', 42, $this->source); })()), "getId", [], "method"), "html", null, true);
         echo " )\"
                        class=\"form-control form-control-sm\" width=100 value=\"";
-        // line 42
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["positionMap"]) || array_key_exists("positionMap", $context) ? $context["positionMap"] : (function () { throw new Twig_Error_Runtime('Variable "positionMap" does not exist.', 42, $this->source); })()), "getAmount", [], "method"), "html", null, true);
+        // line 43
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["positionMap"]) || array_key_exists("positionMap", $context) ? $context["positionMap"] : (function () { throw new Twig_Error_Runtime('Variable "positionMap" does not exist.', 43, $this->source); })()), "getAmount", [], "method"), "html", null, true);
         echo "\" />
             </div>
 
@@ -121,13 +124,13 @@ class __TwigTemplate_8148624079c907dbde6bc29e40ef7031e3730551bc3437b86465c5ce1e9
 
     public function getDebugInfo()
     {
-        return array (  103 => 42,  97 => 41,  91 => 37,  89 => 36,  87 => 35,  85 => 34,  83 => 33,  81 => 32,  79 => 31,  77 => 30,  69 => 24,  55 => 13,  45 => 6,  39 => 2,  27 => 1,);
+        return array (  106 => 43,  100 => 42,  93 => 37,  91 => 36,  89 => 35,  87 => 34,  85 => 33,  83 => 32,  81 => 31,  79 => 30,  71 => 24,  57 => 13,  47 => 6,  39 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("{% block positionOnMap %}
-<li class=\"list-group-item text-center\">
+<li class=\"list-group-item text-center\" id=\"position{{ positionMap.getId() }}\">
     <div class=\"row\">
         <div class=\"w-100 row mx-auto\">
             <div class=\"col-lg-2 col-md-4 d-inline\">
@@ -164,6 +167,7 @@ class __TwigTemplate_8148624079c907dbde6bc29e40ef7031e3730551bc3437b86465c5ce1e9
                 {#</div>#}
 
             </div>
+
             <div class=\"col-lg-2  col-md-12 d-inline\">
                 <p class=\"myTextFont h5\">Кол-во:</p>
                 <input id=\"{{ positionMap.getId() }}\" onchange=\"changeAmountMaterial( {{ positionMap.getId() }} )\"

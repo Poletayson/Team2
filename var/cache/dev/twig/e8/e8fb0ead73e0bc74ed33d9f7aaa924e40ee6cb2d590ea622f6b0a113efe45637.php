@@ -41,7 +41,7 @@ class __TwigTemplate_e874991a45504843dd2d03ddee2a900a5b39abea5127c64be98c1152ec1
         // line 3
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["material"]) || array_key_exists("material", $context) ? $context["material"] : (function () { throw new Twig_Error_Runtime('Variable "material" does not exist.', 3, $this->source); })()), "getId", [], "method"), "html", null, true);
         echo ", ";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["positionMap"]) || array_key_exists("positionMap", $context) ? $context["positionMap"] : (function () { throw new Twig_Error_Runtime('Variable "positionMap" does not exist.', 3, $this->source); })()), "getId", [], "method"), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["positionMap"]) || array_key_exists("positionMap", $context) ? $context["positionMap"] : (function () { throw new Twig_Error_Runtime('Variable "positionMap" does not exist.', 3, $this->source); })()), "getTechnologyMap", []), "getId", [], "method"), "html", null, true);
         echo " )\">
 
             <div class=\" row col-lg-4  d-inline my-auto\">
@@ -111,7 +111,7 @@ class __TwigTemplate_e874991a45504843dd2d03ddee2a900a5b39abea5127c64be98c1152ec1
     {
         return new Twig_Source("{% block oneIntem %}
     <li>
-        <button class=\"w-100 row  p-1 mx-auto\" onclick=\"addInMap({{material.getId()}}, {{positionMap.getId()}} )\">
+        <button class=\"w-100 row  p-1 mx-auto\" onclick=\"addInMap({{material.getId()}}, {{positionMap.getTechnologyMap.getId()}} )\">
 
             <div class=\" row col-lg-4  d-inline my-auto\">
                 <img src=\"{{  asset( material.getImg() ) }}\" class=\"img-fluid\">

@@ -129,28 +129,46 @@ class ProductController extends AbstractController
         if( isset($_POST['id']))
             $id = intval($_POST['id']);
 
+        if( isset($_POST['amount']))
+            $amount = $_POST['amount'];
+
         $position = $em->getRepository(TechnologyMapPosition::class);
         $position = $position->find($id);
 
-        if (!$position) {
+        if( $amount > 0 ){
 
-            throw $this->createNotFoundException(
-                'No position found for id '.$_POST['id']
-            );
+            if (!$position) {
+
+                throw $this->createNotFoundException(
+                    'No position found for id '.$_POST['id']
+                );
+
+            }
+
+            $position->setAmount($_POST['amount']);
+            $em->flush();
+
+        } else {
+
+            return $this->deletePosition( $position );
 
         }
-        if( isset($_POST['amount']))
-            $position->setAmount($_POST['amount']);
 
-        $em->flush();
 
         return new Response("Success!");
     }
 
+    public function deletePosition( $position ){
 
-    // Добавить новую запись в технологическую карту товара
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($position);
+        $em->flush();
+
+        return new Response("Element deleted!");
+    }
+
     /**
-     * @Route("/product/1/addMaterial", name="addMaterial")
+     * @Route("/product/materials/addMaterialInTechnologyMap", name="addMaterialInTechnologyMap")
      */
     public function addMaterialInTechnologyMap(){
 
@@ -187,4 +205,6 @@ class ProductController extends AbstractController
             ['positionMap'=>$technology_map_position]);
 
     }
+
+
 }

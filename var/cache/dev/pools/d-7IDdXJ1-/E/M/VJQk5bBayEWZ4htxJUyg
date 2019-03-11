@@ -8,10 +8,10 @@
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/product/1/addMaterial',
+                    '/product/materials/addMaterialInTechnologyMap',
                 ],
                 'name' => [
-                    'addMaterial',
+                    'addMaterialInTechnologyMap',
                 ],
             ],
         ],
