@@ -16,6 +16,21 @@ function changeAmountMaterial ( index ) {
 
 }
 
+function addInMap( idMaterial, idMap ){
+    let dataString = "idMaterial=" + idMaterial +"&idMap=" + idMap ;
+
+    $.ajax({
+        type: "POST",
+        url: "/product/" + "1" + "/addMaterial",
+        data: dataString,
+        cache: false,
+        success: function(html)
+        {
+            document.getElementById("map").innerHTML += html;
+        }
+    });
+}
+
 function saveInfo( id ) {
 
     // alert(id);

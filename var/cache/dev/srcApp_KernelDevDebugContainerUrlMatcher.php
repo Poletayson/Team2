@@ -16,7 +16,8 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
         $this->context = $context;
         $this->staticRoutes = [
             '/product/index' => [[['_route' => 'product_info', '_controller' => 'App\\Controller\\ProductController::index'], null, null, null, false, false, null]],
-            '/product/1/editPosition' => [[['_route' => 'editPosition', '_controller' => 'App\\Controller\\ProductController::changePosition'], null, null, null, false, false, null]],
+            '/product/1/editPosition' => [[['_route' => 'editPosition', '_controller' => 'App\\Controller\\ProductController::editPosition'], null, null, null, false, false, null]],
+            '/product/1/addMaterial' => [[['_route' => 'addMaterial', '_controller' => 'App\\Controller\\ProductController::addMaterialInTechnologyMap'], null, null, null, false, false, null]],
             '/techonology/map' => [[['_route' => 'techonology_map', '_controller' => 'App\\Controller\\TechonologyMapController::index'], null, null, null, false, false, null]],
             '/techonology/map/position' => [[['_route' => 'techonology_map_position', '_controller' => 'App\\Controller\\TechonologyMapPositionController::index'], null, null, null, false, false, null]],
             '/tovar' => [[['_route' => 'tovar', '_controller' => 'App\\Controller\\TovarController::index'], null, null, null, false, false, null]],

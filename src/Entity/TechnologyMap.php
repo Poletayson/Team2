@@ -27,7 +27,7 @@ class TechnologyMap
     private $date_end;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\product")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Product")
      * @ORM\JoinColumn(nullable=false)
      */
     private $product;

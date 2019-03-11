@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">W:\domains\quick\src</parameter>
-    <parameter key="kernel.project_dir">W:\domains\quick</parameter>
+    <parameter key="kernel.root_dir">W:\domains\teamSymfony\src</parameter>
+    <parameter key="kernel.project_dir">W:\domains\teamSymfony</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">src</parameter>
-    <parameter key="kernel.cache_dir">W:\domains\quick\var\cache\dev</parameter>
-    <parameter key="kernel.logs_dir">W:\domains\quick\var\log</parameter>
+    <parameter key="kernel.cache_dir">W:\domains\teamSymfony\var\cache\dev</parameter>
+    <parameter key="kernel.logs_dir">W:\domains\teamSymfony\var\log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="MakerBundle">Symfony\Bundle\MakerBundle\MakerBundle</parameter>
@@ -19,31 +19,31 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">W:\domains\quick\vendor\symfony\framework-bundle</parameter>
+        <parameter key="path">W:\domains\teamSymfony\vendor\symfony\framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="MakerBundle" type="collection">
-        <parameter key="path">W:\domains\quick\vendor\symfony\maker-bundle\src</parameter>
+        <parameter key="path">W:\domains\teamSymfony\vendor\symfony\maker-bundle\src</parameter>
         <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
       </parameter>
       <parameter key="DoctrineCacheBundle" type="collection">
-        <parameter key="path">W:\domains\quick\vendor\doctrine\doctrine-cache-bundle</parameter>
+        <parameter key="path">W:\domains\teamSymfony\vendor\doctrine\doctrine-cache-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineCacheBundle</parameter>
       </parameter>
       <parameter key="DoctrineBundle" type="collection">
-        <parameter key="path">W:\domains\quick\vendor\doctrine\doctrine-bundle</parameter>
+        <parameter key="path">W:\domains\teamSymfony\vendor\doctrine\doctrine-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
       </parameter>
       <parameter key="DoctrineMigrationsBundle" type="collection">
-        <parameter key="path">W:\domains\quick\vendor\doctrine\doctrine-migrations-bundle</parameter>
+        <parameter key="path">W:\domains\teamSymfony\vendor\doctrine\doctrine-migrations-bundle</parameter>
         <parameter key="namespace">Doctrine\Bundle\MigrationsBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">W:\domains\quick\vendor\symfony\twig-bundle</parameter>
+        <parameter key="path">W:\domains\teamSymfony\vendor\symfony\twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
-        <parameter key="path">W:\domains\quick\vendor\sensio\framework-extra-bundle</parameter>
+        <parameter key="path">W:\domains\teamSymfony\vendor\sensio\framework-extra-bundle</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
     </parameter>
@@ -67,13 +67,13 @@
       <parameter key="cookie_samesite">lax</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">W:\domains\quick\var\cache\dev/sessions</parameter>
+    <parameter key="session.save_path">W:\domains\teamSymfony\var\cache\dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="asset.request_context.base_path"></parameter>
     <parameter key="asset.request_context.secure">false</parameter>
     <parameter key="data_collector.templates" type="collection"/>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">W:\domains\quick\var\cache\dev/srcApp_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">W:\domains\teamSymfony\var\cache\dev/srcApp_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
@@ -188,9 +188,9 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">W:\domains\quick\var\cache\dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">W:\domains\teamSymfony\var\cache\dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
-    <parameter key="doctrine_migrations.dir_name">W:\domains\quick/src/Migrations</parameter>
+    <parameter key="doctrine_migrations.dir_name">W:\domains\teamSymfony/src/Migrations</parameter>
     <parameter key="doctrine_migrations.namespace">DoctrineMigrations</parameter>
     <parameter key="doctrine_migrations.table_name">migration_versions</parameter>
     <parameter key="doctrine_migrations.column_name">version</parameter>
@@ -204,7 +204,7 @@
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">W:\domains\quick/templates</parameter>
+    <parameter key="twig.default_path">W:\domains\teamSymfony/templates</parameter>
     <parameter key="console.command.ids" type="collection">
       <parameter>console.command.public_alias.doctrine_cache.contains_command</parameter>
       <parameter>console.command.public_alias.doctrine_cache.delete_command</parameter>
@@ -333,7 +333,7 @@
     <service id="cache_warmer" class="Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerAggregate" public="true">
       <argument type="tagged" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>W:\domains\quick\var\cache\dev/srcApp_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>W:\domains\teamSymfony\var\cache\dev/srcApp_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer" public="true">
       <argument type="tagged" tag="kernel.cache_clearer"/>
@@ -342,9 +342,9 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem" public="true"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator" public="false">
       <argument type="service" id="kernel"/>
-      <argument>W:\domains\quick\src/Resources</argument>
+      <argument>W:\domains\teamSymfony\src/Resources</argument>
       <argument type="collection">
-        <argument>W:\domains\quick\src</argument>
+        <argument>W:\domains\teamSymfony\src</argument>
       </argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner" public="false">
@@ -490,9 +490,9 @@
     </service>
     <service id="cache.app" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="true">
       <tag name="cache.pool"/>
-      <argument>KWO-q68idT</argument>
+      <argument>gHe2cL1P9Z</argument>
       <argument>0</argument>
-      <argument>W:\domains\quick\var\cache\dev/pools</argument>
+      <argument>W:\domains\teamSymfony\var\cache\dev/pools</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -506,37 +506,37 @@
     </service>
     <service id="cache.system" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="true">
       <tag name="cache.pool"/>
-      <argument>z3KNyp51zd</argument>
+      <argument>9lb5roi9Ma</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>W:\domains\quick\var\cache\dev/pools</argument>
+      <argument>W:\domains\teamSymfony\var\cache\dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
-      <argument>g0H6pHU9Ma</argument>
+      <argument>sLBDFbNM7D</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>W:\domains\quick\var\cache\dev/pools</argument>
+      <argument>W:\domains\teamSymfony\var\cache\dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
-      <argument>7lGP9MsYYU</argument>
+      <argument>Bz3peIS0OF</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>W:\domains\quick\var\cache\dev/pools</argument>
+      <argument>W:\domains\teamSymfony\var\cache\dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
       <tag name="cache.pool"/>
-      <argument>0QI308P5Ua</argument>
+      <argument>d-7IDdXJ1-</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>W:\domains\quick\var\cache\dev/pools</argument>
+      <argument>W:\domains\teamSymfony\var\cache\dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -546,7 +546,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>W:\domains\quick\var\cache\dev/pools</argument>
+      <argument>W:\domains\teamSymfony\var\cache\dev/pools</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -575,7 +575,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>W:\domains\quick\var\cache\dev/pools</argument>
+      <argument>W:\domains\teamSymfony\var\cache\dev/pools</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -658,8 +658,8 @@
         <argument key="cache.annotations" type="service" id="cache.annotations" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
-    <service id=".1_NativeFileSessionHandler~lg0ynMG" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
-      <argument>W:\domains\quick\var\cache\dev/sessions</argument>
+    <service id=".1_NativeFileSessionHandler~4X1ExTh" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
+      <argument>W:\domains\teamSymfony\var\cache\dev/sessions</argument>
     </service>
     <service id="session" class="Symfony\Component\HttpFoundation\Session\Session" public="true">
       <argument type="service" id="session.storage.native"/>
@@ -682,12 +682,12 @@
     <service id="session.flash_bag" class="Symfony\Component\HttpFoundation\Session\Flash\FlashBag" public="false"/>
     <service id="session.attribute_bag" class="Symfony\Component\HttpFoundation\Session\Attribute\AttributeBag" public="false"/>
     <service id="session.storage.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage" public="false">
-      <argument>W:\domains\quick\var\cache\dev/sessions</argument>
+      <argument>W:\domains\teamSymfony\var\cache\dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler" public="false">
-      <argument type="service" id=".1_NativeFileSessionHandler~lg0ynMG"/>
+      <argument type="service" id=".1_NativeFileSessionHandler~4X1ExTh"/>
     </service>
     <service id="session_listener" class="Symfony\Component\HttpKernel\EventListener\SessionListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -1065,7 +1065,7 @@
       <argument type="service" id=".service_locator.MAfdX1A.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">W:\domains\quick\var\cache\dev</argument>
+        <argument key="cache_dir">W:\domains\teamSymfony\var\cache\dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -1107,7 +1107,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument>W:\domains\quick</argument>
+      <argument>W:\domains\teamSymfony</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -1133,12 +1133,12 @@
       <argument type="service" id="file_locator"/>
       <argument type="service" id="routing.loader.annotation"/>
     </service>
-    <service id=".2_PhpArrayAdapter~t5UvTKS" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>W:\domains\quick\var\cache\dev/annotations.php</argument>
+    <service id=".2_PhpArrayAdapter~YEgRee2" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
+      <argument>W:\domains\teamSymfony\var\cache\dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
-    <service id=".1_ArrayCache~t5UvTKS" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
+    <service id=".1_ArrayCache~YEgRee2" class="Doctrine\Common\Cache\ArrayCache" public="false"/>
     <service id="annotations.reader" class="Doctrine\Common\Annotations\AnnotationReader" public="false">
       <call method="addGlobalIgnoredName">
         <argument>required</argument>
@@ -1153,7 +1153,7 @@
     <service id="annotations.cached_reader" class="Doctrine\Common\Annotations\CachedReader" public="false">
       <tag name="annotations.cached_reader"/>
       <argument type="service" id="annotations.reader"/>
-      <argument type="service" id=".1_ArrayCache~t5UvTKS"/>
+      <argument type="service" id=".1_ArrayCache~YEgRee2"/>
       <argument>true</argument>
       <property name="cacheProviderBackup" type="service" id="annotations.cache"/>
     </service>
@@ -1163,17 +1163,17 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>W:\domains\quick\var\cache\dev/annotations.php</argument>
+      <argument>W:\domains\teamSymfony\var\cache\dev/annotations.php</argument>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!AbstractController$|Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache" class="Symfony\Component\Cache\DoctrineProvider" public="false">
-      <argument type="service" id=".2_PhpArrayAdapter~t5UvTKS"/>
+      <argument type="service" id=".2_PhpArrayAdapter~YEgRee2"/>
     </service>
     <service id="maker.file_manager" class="Symfony\Bundle\MakerBundle\FileManager" public="false">
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
-      <argument>W:\domains\quick</argument>
+      <argument>W:\domains\teamSymfony</argument>
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder" public="false"/>
     <service id="maker.autoloader_util" class="Symfony\Bundle\MakerBundle\Util\AutoloaderUtil" public="false">
@@ -1229,7 +1229,7 @@
       <tag name="maker.command"/>
       <argument type="service" id="maker.file_manager"/>
       <argument type="service" id="maker.doctrine_helper"/>
-      <argument>W:\domains\quick</argument>
+      <argument>W:\domains\teamSymfony</argument>
       <argument type="service" id="maker.generator"/>
     </service>
     <service id="maker.maker.make_fixtures" class="Symfony\Bundle\MakerBundle\Maker\MakeFixtures" public="false">
@@ -1279,7 +1279,7 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration" public="false">
       <tag name="maker.command"/>
-      <argument>W:\domains\quick</argument>
+      <argument>W:\domains\teamSymfony</argument>
     </service>
     <service id="doctrine_cache.abstract.apc" class="Doctrine\Common\Cache\ApcCache" abstract="true"/>
     <service id="doctrine_cache.abstract.apcu" class="Doctrine\Common\Cache\ApcuCache" abstract="true"/>
@@ -1577,7 +1577,7 @@
         <argument type="service" id="doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>W:\domains\quick\var\cache\dev/doctrine/orm/Proxies</argument>
+        <argument>W:\domains\teamSymfony\var\cache\dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -1607,7 +1607,7 @@
     <service id="doctrine.orm.default_annotation_metadata_driver" class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
       <argument type="service" id="annotations.cached_reader"/>
       <argument type="collection">
-        <argument>W:\domains\quick\src\Entity</argument>
+        <argument>W:\domains\teamSymfony\src\Entity</argument>
       </argument>
     </service>
     <service id="doctrine.orm.default_metadata_driver" class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
@@ -1618,17 +1618,17 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
-        <argument>sf_orm_default_c96916777c03e993bf82190df103e4522ad455babaa0aeb77913ab832703d4f2</argument>
+        <argument>sf_orm_default_dbaaf3259e704f5f1d3d047ba8f34f1de5cdbbadc02dabae0779c6182754b9e5</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
-        <argument>sf_orm_default_c96916777c03e993bf82190df103e4522ad455babaa0aeb77913ab832703d4f2</argument>
+        <argument>sf_orm_default_dbaaf3259e704f5f1d3d047ba8f34f1de5cdbbadc02dabae0779c6182754b9e5</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache" public="true">
       <call method="setNamespace">
-        <argument>sf_orm_default_c96916777c03e993bf82190df103e4522ad455babaa0aeb77913ab832703d4f2</argument>
+        <argument>sf_orm_default_dbaaf3259e704f5f1d3d047ba8f34f1de5cdbbadc02dabae0779c6182754b9e5</argument>
       </call>
     </service>
     <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\Bundle\DoctrineBundle\Mapping\ContainerAwareEntityListenerResolver">
@@ -1680,7 +1680,7 @@
     <service id="twig" class="Twig\Environment" public="true">
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
-        <argument key="default_path">W:\domains\quick/templates</argument>
+        <argument key="default_path">W:\domains\teamSymfony/templates</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
         <argument key="exception_controller">twig.controller.exception::showAction</argument>
@@ -1688,7 +1688,7 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">name</argument>
-        <argument key="cache">W:\domains\quick\var\cache\dev/twig</argument>
+        <argument key="cache">W:\domains\teamSymfony\var\cache\dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -1764,9 +1764,9 @@
     </service>
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
       <argument type="service" id="kernel"/>
-      <argument>W:\domains\quick\src</argument>
+      <argument>W:\domains\teamSymfony\src</argument>
       <argument type="collection"/>
-      <argument>W:\domains\quick/templates</argument>
+      <argument>W:\domains\teamSymfony/templates</argument>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
@@ -1777,33 +1777,33 @@
     <service id="twig.loader.native_filesystem" class="Symfony\Bundle\TwigBundle\Loader\NativeFilesystemLoader" public="false">
       <tag name="twig.loader"/>
       <argument type="collection"/>
-      <argument>W:\domains\quick</argument>
+      <argument>W:\domains\teamSymfony</argument>
       <call method="addPath">
-        <argument>W:\domains\quick\vendor\symfony\framework-bundle/Resources/views</argument>
+        <argument>W:\domains\teamSymfony\vendor\symfony\framework-bundle/Resources/views</argument>
         <argument>Framework</argument>
       </call>
       <call method="addPath">
-        <argument>W:\domains\quick\vendor\symfony\framework-bundle/Resources/views</argument>
+        <argument>W:\domains\teamSymfony\vendor\symfony\framework-bundle/Resources/views</argument>
         <argument>!Framework</argument>
       </call>
       <call method="addPath">
-        <argument>W:\domains\quick\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>W:\domains\teamSymfony\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>W:\domains\quick\vendor\doctrine\doctrine-bundle/Resources/views</argument>
+        <argument>W:\domains\teamSymfony\vendor\doctrine\doctrine-bundle/Resources/views</argument>
         <argument>!Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>W:\domains\quick\vendor\symfony\twig-bundle/Resources/views</argument>
+        <argument>W:\domains\teamSymfony\vendor\symfony\twig-bundle/Resources/views</argument>
         <argument>Twig</argument>
       </call>
       <call method="addPath">
-        <argument>W:\domains\quick\vendor\symfony\twig-bundle/Resources/views</argument>
+        <argument>W:\domains\teamSymfony\vendor\symfony\twig-bundle/Resources/views</argument>
         <argument>!Twig</argument>
       </call>
       <call method="addPath">
-        <argument>W:\domains\quick/templates</argument>
+        <argument>W:\domains\teamSymfony/templates</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader" public="false"/>
@@ -1829,7 +1829,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>W:\domains\quick</argument>
+      <argument>W:\domains\teamSymfony</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension" public="false">
@@ -1891,10 +1891,10 @@
     <service id="twig.command.debug" class="Symfony\Bridge\Twig\Command\DebugCommand" public="false">
       <tag name="console.command" command="debug:twig"/>
       <argument type="service" id="twig"/>
-      <argument>W:\domains\quick</argument>
+      <argument>W:\domains\teamSymfony</argument>
       <argument>%kernel.bundles_metadata%</argument>
-      <argument>W:\domains\quick/templates</argument>
-      <argument>W:\domains\quick\src</argument>
+      <argument>W:\domains\teamSymfony/templates</argument>
+      <argument>W:\domains\teamSymfony\src</argument>
       <call method="setName">
         <argument>debug:twig</argument>
       </call>

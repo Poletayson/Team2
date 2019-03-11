@@ -84,6 +84,6 @@ class __TwigTemplate_e18ae7c49f5d8c89c7d9b9cd0a563a6fd4c550f37abd34ac3daf6529837
   {{ include('@Twig/Exception/trace.txt.twig', { trace: trace }, with_context = false) }}
 {% endfor %}
 {% endif %}
-", "@Twig/Exception/traces.txt.twig", "W:\\domains\\quick\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces.txt.twig");
+", "@Twig/Exception/traces.txt.twig", "W:\\domains\\teamSymfony\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\traces.txt.twig");
     }
 }

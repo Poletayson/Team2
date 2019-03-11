@@ -11,19 +11,19 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
         $this->source = $this->getSourceContext();
 
-        // line 3
-        $this->parent = $this->loadTemplate("product.html.twig", "test.html.twig", 3);
-        $_trait_0 = $this->loadTemplate("oneNodeInList.html.twig", "test.html.twig", 4);
-        // line 4
+        // line 1
+        $this->parent = $this->loadTemplate("product.html.twig", "test.html.twig", 1);
+        $_trait_0 = $this->loadTemplate("oneNodeInList.html.twig", "test.html.twig", 2);
+        // line 2
         if (!$_trait_0->isTraitable()) {
-            throw new Twig_Error_Runtime('Template "'."oneNodeInList.html.twig".'" cannot be used as a trait.', 4, $this->source);
+            throw new Twig_Error_Runtime('Template "'."oneNodeInList.html.twig".'" cannot be used as a trait.', 2, $this->source);
         }
         $_trait_0_blocks = $_trait_0->getBlocks();
 
-        $_trait_1 = $this->loadTemplate("onePositionMap.html.twig", "test.html.twig", 5);
-        // line 5
+        $_trait_1 = $this->loadTemplate("onePositionMap.html.twig", "test.html.twig", 3);
+        // line 3
         if (!$_trait_1->isTraitable()) {
-            throw new Twig_Error_Runtime('Template "'."onePositionMap.html.twig".'" cannot be used as a trait.', 5, $this->source);
+            throw new Twig_Error_Runtime('Template "'."onePositionMap.html.twig".'" cannot be used as a trait.', 3, $this->source);
         }
         $_trait_1_blocks = $_trait_1->getBlocks();
 
@@ -45,7 +45,7 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
     protected function doGetParent(array $context)
     {
-        // line 3
+        // line 1
         return "product.html.twig";
     }
 
@@ -60,20 +60,22 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
     }
 
-    // line 7
+    // line 5
     public function block_content($context, array $blocks = [])
     {
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "content"));
 
-        // line 8
+        // line 6
         echo "
-    <div id=\"content-wrapper\" class=\"myColorElem\" >
+    ";
+        // line 8
+        echo "    <div id=\"content-wrapper\" class=\"myColorElem\" >
 
         <div class=\"row\">
             <span class=\"lg-col-12 sm-col-4 h1 ml-4\">";
-        // line 12
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 12, $this->source); })()), "title", []), "html", null, true);
+        // line 11
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 11, $this->source); })()), "title", []), "html", null, true);
         echo "</span>
         </div>
 
@@ -82,8 +84,8 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
             <div class=\"d-inline col-md-4 col-sm-12\">
 
                 <img src=\"";
-        // line 19
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 19, $this->source); })()), "image", [])), "html", null, true);
+        // line 18
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 18, $this->source); })()), "image", [])), "html", null, true);
         echo "\" alt=\"Example\" class=\"img-fluid\"/>
 
             </div>
@@ -98,46 +100,46 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
                             <div class=\"col-sm-12\">
                                 <input class=\"form-control form-control-sm\" id=\"title\" value=\"";
-        // line 32
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 32, $this->source); })()), "title", []), "html", null, true);
+        // line 31
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 31, $this->source); })()), "title", []), "html", null, true);
         echo "\">
                             </div>
 
                             <label for=\"colFormLabelSm\" class=\"col-sm-2 col-form-label col-form-label-sm\">Код товара</label>
                             <div class=\"col-sm-12\">
                                 <input class=\"form-control form-control-sm\" id=\"code\" placeholder=\"000000\" value=\"";
-        // line 37
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 37, $this->source); })()), "code", []), "html", null, true);
+        // line 36
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 36, $this->source); })()), "code", []), "html", null, true);
         echo "\">
                             </div>
 
                             <label for=\"colFormLabelSm\" class=\"col-sm-5 col-form-label col-form-label-sm\">Количество на складе</label>
                             <div class=\"col-sm-12\">
                                 <input class=\"form-control form-control-sm\" id=\"balance\" placeholder=\"0\" value=\"";
-        // line 42
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 42, $this->source); })()), "balance", []), "html", null, true);
+        // line 41
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 41, $this->source); })()), "balance", []), "html", null, true);
         echo "\">
                             </div>
 
                             <label for=\"colFormLabelSm\" class=\"col-sm-5 col-form-label col-form-label-sm\">Описание товара</label>
                             <div class=\"col-sm-12\">
                                   <textarea id=\"description\" class=\"form-control text-justify\"  rows=\"5\">";
-        // line 47
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 47, $this->source); })()), "description", []), "html", null, true);
+        // line 46
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 46, $this->source); })()), "description", []), "html", null, true);
         echo "</textarea>
                             </div>
 
                             <div class=\"col-sm-12 text-center\">
 
                                 ";
-        // line 52
+        // line 51
         echo "#}
                                     <input type=\"submit\" class=\"btn btn-success my-2\" onclick=\"saveInfo( ";
-        // line 53
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 53, $this->source); })()), "id", []), "html", null, true);
+        // line 52
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 52, $this->source); })()), "id", []), "html", null, true);
         echo ")\" name=\"name\" value=\"Применить\" />
                                 ";
-        // line 55
+        // line 54
         echo "
                             </div>
 
@@ -152,9 +154,9 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
                             <ul class=\"dropdown-menu scrollable-menu w-50\" role=\"menu\">
 
                                 ";
-        // line 68
+        // line 67
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["materials"]) || array_key_exists("materials", $context) ? $context["materials"] : (function () { throw new Twig_Error_Runtime('Variable "materials" does not exist.', 68, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["materials"]) || array_key_exists("materials", $context) ? $context["materials"] : (function () { throw new Twig_Error_Runtime('Variable "materials" does not exist.', 67, $this->source); })()));
         $context['loop'] = [
           'parent' => $context['_parent'],
           'index0' => 0,
@@ -169,17 +171,22 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["currentMaterial"]) {
+            // line 68
+            echo "
+                                    ";
             // line 69
-            echo "
-                                    ";
-            // line 70
             $context["material"] = $context["currentMaterial"];
-            // line 71
+            // line 70
             echo "
                                     ";
+            // line 71
+            $context["positionMap"] = twig_get_attribute($this->env, $this->source, (isset($context["positions"]) || array_key_exists("positions", $context) ? $context["positions"] : (function () { throw new Twig_Error_Runtime('Variable "positions" does not exist.', 71, $this->source); })()), 0, [], "array");
             // line 72
+            echo "
+                                    ";
+            // line 73
             $this->displayBlock('oneIntem', $context, $blocks);
-            // line 77
+            // line 78
             echo "
                                 ";
             ++$context['loop']['index0'];
@@ -194,16 +201,16 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['currentMaterial'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 79
+        // line 80
         echo "
                             </ul>
 
-                            <ul class=\"list-group\">
+                            <ul class=\"list-group\" id=\"map\">
 
                                 ";
-        // line 84
+        // line 85
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["positions"]) || array_key_exists("positions", $context) ? $context["positions"] : (function () { throw new Twig_Error_Runtime('Variable "positions" does not exist.', 84, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["positions"]) || array_key_exists("positions", $context) ? $context["positions"] : (function () { throw new Twig_Error_Runtime('Variable "positions" does not exist.', 85, $this->source); })()));
         $context['loop'] = [
           'parent' => $context['_parent'],
           'index0' => 0,
@@ -218,17 +225,17 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["currentPosition"]) {
-            // line 85
-            echo "
-                                    ";
             // line 86
-            $context["positionMap"] = $context["currentPosition"];
-            // line 87
             echo "
                                     ";
+            // line 87
+            $context["positionMap"] = $context["currentPosition"];
             // line 88
+            echo "
+                                    ";
+            // line 89
             $this->displayBlock('positionOnMap', $context, $blocks);
-            // line 91
+            // line 92
             echo "
                                 ";
             ++$context['loop']['index0'];
@@ -243,7 +250,7 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['currentPosition'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 93
+        // line 94
         echo "
                             </ul>
 
@@ -270,16 +277,16 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
     }
 
-    // line 72
+    // line 73
     public function block_oneIntem($context, array $blocks = [])
     {
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "oneIntem"));
 
-        // line 73
+        // line 74
         echo "
                                         ";
-        // line 74
+        // line 75
         $this->displayParentBlock("oneIntem", $context, $blocks);
         echo "
 
@@ -289,13 +296,13 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
     }
 
-    // line 88
+    // line 89
     public function block_positionOnMap($context, array $blocks = [])
     {
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "positionOnMap"));
 
-        // line 89
+        // line 90
         echo "                                        ";
         $this->displayParentBlock("positionOnMap", $context, $blocks);
         echo "
@@ -305,18 +312,18 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
     }
 
-    // line 115
+    // line 116
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 116
+        // line 117
         echo "    ";
         $this->displayParentBlock("javascripts", $context, $blocks);
         echo "
     <script src=\"";
-        // line 117
+        // line 118
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("js/editButton/product.js"), "html", null, true);
         echo "\"></script>
 ";
@@ -337,19 +344,18 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
     public function getDebugInfo()
     {
-        return array (  320 => 117,  315 => 116,  309 => 115,  299 => 89,  293 => 88,  283 => 74,  280 => 73,  274 => 72,  247 => 93,  232 => 91,  230 => 88,  227 => 87,  225 => 86,  222 => 85,  205 => 84,  198 => 79,  183 => 77,  181 => 72,  178 => 71,  176 => 70,  173 => 69,  156 => 68,  141 => 55,  137 => 53,  134 => 52,  126 => 47,  118 => 42,  110 => 37,  102 => 32,  86 => 19,  76 => 12,  70 => 8,  64 => 7,  49 => 3,  25 => 5,  18 => 4,  15 => 3,);
+        return array (  327 => 118,  322 => 117,  316 => 116,  306 => 90,  300 => 89,  290 => 75,  287 => 74,  281 => 73,  254 => 94,  239 => 92,  237 => 89,  234 => 88,  232 => 87,  229 => 86,  212 => 85,  205 => 80,  190 => 78,  188 => 73,  185 => 72,  183 => 71,  180 => 70,  178 => 69,  175 => 68,  158 => 67,  143 => 54,  139 => 52,  136 => 51,  128 => 46,  120 => 41,  112 => 36,  104 => 31,  88 => 18,  78 => 11,  73 => 8,  70 => 6,  64 => 5,  49 => 1,  25 => 3,  18 => 2,  15 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Twig_Source("
-
-{% extends \"product.html.twig\" %}
+        return new Twig_Source("{% extends \"product.html.twig\" %}
 {% use \"oneNodeInList.html.twig\" %}
 {% use \"onePositionMap.html.twig\" %}
 
 {% block content%}
 
+    {#<input id=\"technology_map_id\" value=\"\"#}
     <div id=\"content-wrapper\" class=\"myColorElem\" >
 
         <div class=\"row\">
@@ -413,6 +419,8 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
                                     {% set material = currentMaterial %}
 
+                                    {% set positionMap = positions[0] %}
+
                                     {% block oneIntem %}
 
                                         {{ parent()}}
@@ -423,7 +431,7 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
                             </ul>
 
-                            <ul class=\"list-group\">
+                            <ul class=\"list-group\" id=\"map\">
 
                                 {% for currentPosition in positions %}
 
@@ -459,6 +467,6 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 {% block javascripts %}
     {{ parent() }}
     <script src=\"{{ asset('js/editButton/product.js') }}\"></script>
-{% endblock %}", "test.html.twig", "W:\\domains\\quick\\templates\\test.html.twig");
+{% endblock %}", "test.html.twig", "W:\\domains\\teamSymfony\\templates\\test.html.twig");
     }
 }

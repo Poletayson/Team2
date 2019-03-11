@@ -1,8 +1,8 @@
 {% block oneIntem %}
     <li>
-        <button class="w-100 row  p-1 mx-auto">
+        <button class="w-100 row  p-1 mx-auto" onclick="addInMap({{material.getId()}}, {{positionMap.getId()}} )">
 
-            <div class="col-lg-4  d-inline my-auto">
+            <div class=" row col-lg-4  d-inline my-auto">
                 <img src="{{  asset( material.getImg() ) }}" class="img-fluid">
             </div>
 

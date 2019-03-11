@@ -518,6 +518,6 @@ class __TwigTemplate_91897fc19e10a167917f22641d52cccce57fedad02dce5a83456e317557
 </body>
 
 </html>
-", "product.html.twig", "W:\\domains\\quick\\templates\\product.html.twig");
+", "product.html.twig", "W:\\domains\\teamSymfony\\templates\\product.html.twig");
     }
 }

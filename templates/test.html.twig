@@ -1,11 +1,10 @@
-
-
 {% extends "product.html.twig" %}
 {% use "oneNodeInList.html.twig" %}
 {% use "onePositionMap.html.twig" %}
 
 {% block content%}
 
+    {#<input id="technology_map_id" value=""#}
     <div id="content-wrapper" class="myColorElem" >
 
         <div class="row">
@@ -69,6 +68,8 @@
 
                                     {% set material = currentMaterial %}
 
+                                    {% set positionMap = positions[0] %}
+
                                     {% block oneIntem %}
 
                                         {{ parent()}}
@@ -79,7 +80,7 @@
 
                             </ul>
 
-                            <ul class="list-group">
+                            <ul class="list-group" id="map">
 
                                 {% for currentPosition in positions %}
 

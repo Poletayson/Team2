@@ -37,9 +37,14 @@ class __TwigTemplate_e874991a45504843dd2d03ddee2a900a5b39abea5127c64be98c1152ec1
 
         // line 2
         echo "    <li>
-        <button class=\"w-100 row  p-1 mx-auto\">
+        <button class=\"w-100 row  p-1 mx-auto\" onclick=\"addInMap(";
+        // line 3
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["material"]) || array_key_exists("material", $context) ? $context["material"] : (function () { throw new Twig_Error_Runtime('Variable "material" does not exist.', 3, $this->source); })()), "getId", [], "method"), "html", null, true);
+        echo ", ";
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["positionMap"]) || array_key_exists("positionMap", $context) ? $context["positionMap"] : (function () { throw new Twig_Error_Runtime('Variable "positionMap" does not exist.', 3, $this->source); })()), "getId", [], "method"), "html", null, true);
+        echo " )\">
 
-            <div class=\"col-lg-4  d-inline my-auto\">
+            <div class=\" row col-lg-4  d-inline my-auto\">
                 <img src=\"";
         // line 6
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, (isset($context["material"]) || array_key_exists("material", $context) ? $context["material"] : (function () { throw new Twig_Error_Runtime('Variable "material" does not exist.', 6, $this->source); })()), "getImg", [], "method")), "html", null, true);
@@ -99,16 +104,16 @@ class __TwigTemplate_e874991a45504843dd2d03ddee2a900a5b39abea5127c64be98c1152ec1
 
     public function getDebugInfo()
     {
-        return array (  79 => 31,  65 => 20,  54 => 12,  45 => 6,  39 => 2,  27 => 1,);
+        return array (  84 => 31,  70 => 20,  59 => 12,  50 => 6,  42 => 3,  39 => 2,  27 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("{% block oneIntem %}
     <li>
-        <button class=\"w-100 row  p-1 mx-auto\">
+        <button class=\"w-100 row  p-1 mx-auto\" onclick=\"addInMap({{material.getId()}}, {{positionMap.getId()}} )\">
 
-            <div class=\"col-lg-4  d-inline my-auto\">
+            <div class=\" row col-lg-4  d-inline my-auto\">
                 <img src=\"{{  asset( material.getImg() ) }}\" class=\"img-fluid\">
             </div>
 
@@ -143,6 +148,6 @@ class __TwigTemplate_e874991a45504843dd2d03ddee2a900a5b39abea5127c64be98c1152ec1
 
         </button>
     </li>
-{% endblock %}", "oneNodeInList.html.twig", "W:\\domains\\quick\\templates\\oneNodeInList.html.twig");
+{% endblock %}", "oneNodeInList.html.twig", "W:\\domains\\teamSymfony\\templates\\oneNodeInList.html.twig");
     }
 }

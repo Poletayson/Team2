@@ -122,10 +122,15 @@ class ProductController extends AbstractController
     /**
      * @Route("/product/1/editPosition", name="editPosition")
      */
-    public function changePosition(){
+    public function editPosition(){
 
         $em = $this->getDoctrine()->getManager();
-        $position = $em->getRepository(TechnologyMapPosition::class)->find($_POST['id']);
+
+        if( isset($_POST['id']))
+            $id = intval($_POST['id']);
+
+        $position = $em->getRepository(TechnologyMapPosition::class);
+        $position = $position->find($id);
 
         if (!$position) {
 
@@ -134,11 +139,52 @@ class ProductController extends AbstractController
             );
 
         }
-
-        $position->setAmount($_POST['amount']);
+        if( isset($_POST['amount']))
+            $position->setAmount($_POST['amount']);
 
         $em->flush();
 
         return new Response("Success!");
+    }
+
+
+    // Добавить новую запись в технологическую карту товара
+    /**
+     * @Route("/product/1/addMaterial", name="addMaterial")
+     */
+    public function addMaterialInTechnologyMap(){
+
+        // Получаем доступ к базе данных
+        $em = $this->getDoctrine()->getManager();
+        $amount = 1;
+
+        // Проверка, что параметры переданы
+        if(isset($_POST['idMaterial']))
+            $material_id = $_POST['idMaterial'];
+
+        if( isset($_POST['idMap']) )
+            $technology_map_id = $_POST['idMap'];
+
+        // Создаем и заполняем данными запись в технологической карте
+        $technology_map_position = new TechnologyMapPosition();
+        // Норма расхода
+        $technology_map_position->setAmount($amount);
+        // Ссылка на используемый материал
+        $tmp = $this->getDoctrine()->getManager()->getRepository(Material::class)->find( $material_id );
+        $technology_map_position->setMaterial($tmp);
+        // Ссылка на технологическую карту
+        $tmp = $this->getDoctrine()->getManager()->getRepository(TechnologyMap::class)->find($technology_map_id);
+        $technology_map_position->setTechnologyMap($tmp);
+
+        // Подготовка к добавлению новой записи
+        $em->persist($technology_map_position);
+
+        // Выполняем добавление
+        $em->flush();
+
+        // Вернем в product.js li, в котором содержится информация по добавленной записи
+        return $this->render('onePositionMap.html.twig',
+            ['positionMap'=>$technology_map_position]);
+
     }
 }
