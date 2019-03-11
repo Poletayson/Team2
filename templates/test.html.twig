@@ -28,17 +28,17 @@
                         <div class="row">
                             <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Название</label>
 
-                            <div class="col-sm-5">
+                            <div class="col-sm-12">
                                 <input class="form-control form-control-sm" id="title" value="{{ product.title }}">
                             </div>
 
                             <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Код товара</label>
-                            <div class="col-sm-5">
+                            <div class="col-sm-12">
                                 <input class="form-control form-control-sm" id="code" placeholder="000000" value="{{ product.code }}">
                             </div>
 
                             <label for="colFormLabelSm" class="col-sm-5 col-form-label col-form-label-sm">Количество на складе</label>
-                            <div class="col-sm-5">
+                            <div class="col-sm-12">
                                 <input class="form-control form-control-sm" id="balance" placeholder="0" value="{{ product.balance }}">
                             </div>
 
@@ -49,7 +49,7 @@
 
                             <div class="col-sm-12 text-center">
 
-                                {#<form name="test">#}
+                                {#<form name="test">#}#}
                                     <input type="submit" class="btn btn-success my-2" onclick="saveInfo( {{ product.id }})" name="name" value="Применить" />
                                 {#</form>#}
 
@@ -57,7 +57,7 @@
 
                         </div>
                         <br/>
-                        <input type="checkbox" id="hd-2" class="hide"/>
+                        <input type="checkbox" checked="true" id="hd-2" class="hide"/>
                         <label for="hd-2" class="h3">Технологическая карта</label>
                         <div>
                             <button type="button" class="btn btn-success w-100" data-toggle="dropdown">

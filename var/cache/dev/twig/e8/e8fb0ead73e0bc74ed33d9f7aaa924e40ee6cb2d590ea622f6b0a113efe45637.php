@@ -46,7 +46,7 @@ class __TwigTemplate_e874991a45504843dd2d03ddee2a900a5b39abea5127c64be98c1152ec1
         echo "\" class=\"img-fluid\">
             </div>
 
-            <div class=\"row col-lg-8 d-inline\">
+            <div class=\"row col-lg-9 d-inline\">
 
                 <div class=\"col-lg-11 d-block col-12\">
                     <p class=\"myTextFont h4\">";
@@ -112,7 +112,7 @@ class __TwigTemplate_e874991a45504843dd2d03ddee2a900a5b39abea5127c64be98c1152ec1
                 <img src=\"{{  asset( material.getImg() ) }}\" class=\"img-fluid\">
             </div>
 
-            <div class=\"row col-lg-8 d-inline\">
+            <div class=\"row col-lg-9 d-inline\">
 
                 <div class=\"col-lg-11 d-block col-12\">
                     <p class=\"myTextFont h4\">{{ material.getTitle() }}</p>

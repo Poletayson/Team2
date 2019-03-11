@@ -119,4 +119,26 @@ class ProductController extends AbstractController
 
     }
 
+    /**
+     * @Route("/product/1/editPosition", name="editPosition")
+     */
+    public function changePosition(){
+
+        $em = $this->getDoctrine()->getManager();
+        $position = $em->getRepository(TechnologyMapPosition::class)->find($_POST['id']);
+
+        if (!$position) {
+
+            throw $this->createNotFoundException(
+                'No position found for id '.$_POST['id']
+            );
+
+        }
+
+        $position->setAmount($_POST['amount']);
+
+        $em->flush();
+
+        return new Response("Success!");
+    }
 }

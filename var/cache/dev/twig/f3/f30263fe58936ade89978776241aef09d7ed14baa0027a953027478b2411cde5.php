@@ -96,7 +96,7 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
                         <div class=\"row\">
                             <label for=\"colFormLabelSm\" class=\"col-sm-2 col-form-label col-form-label-sm\">Название</label>
 
-                            <div class=\"col-sm-5\">
+                            <div class=\"col-sm-12\">
                                 <input class=\"form-control form-control-sm\" id=\"title\" value=\"";
         // line 32
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 32, $this->source); })()), "title", []), "html", null, true);
@@ -104,7 +104,7 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
                             </div>
 
                             <label for=\"colFormLabelSm\" class=\"col-sm-2 col-form-label col-form-label-sm\">Код товара</label>
-                            <div class=\"col-sm-5\">
+                            <div class=\"col-sm-12\">
                                 <input class=\"form-control form-control-sm\" id=\"code\" placeholder=\"000000\" value=\"";
         // line 37
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 37, $this->source); })()), "code", []), "html", null, true);
@@ -112,7 +112,7 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
                             </div>
 
                             <label for=\"colFormLabelSm\" class=\"col-sm-5 col-form-label col-form-label-sm\">Количество на складе</label>
-                            <div class=\"col-sm-5\">
+                            <div class=\"col-sm-12\">
                                 <input class=\"form-control form-control-sm\" id=\"balance\" placeholder=\"0\" value=\"";
         // line 42
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 42, $this->source); })()), "balance", []), "html", null, true);
@@ -130,8 +130,10 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
                             <div class=\"col-sm-12 text-center\">
 
                                 ";
+        // line 52
+        echo "#}
+                                    <input type=\"submit\" class=\"btn btn-success my-2\" onclick=\"saveInfo( ";
         // line 53
-        echo "                                    <input type=\"submit\" class=\"btn btn-success my-2\" onclick=\"saveInfo( ";
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["product"]) || array_key_exists("product", $context) ? $context["product"] : (function () { throw new Twig_Error_Runtime('Variable "product" does not exist.', 53, $this->source); })()), "id", []), "html", null, true);
         echo ")\" name=\"name\" value=\"Применить\" />
                                 ";
@@ -141,7 +143,7 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
                         </div>
                         <br/>
-                        <input type=\"checkbox\" id=\"hd-2\" class=\"hide\"/>
+                        <input type=\"checkbox\" checked=\"true\" id=\"hd-2\" class=\"hide\"/>
                         <label for=\"hd-2\" class=\"h3\">Технологическая карта</label>
                         <div>
                             <button type=\"button\" class=\"btn btn-success w-100\" data-toggle=\"dropdown\">
@@ -335,7 +337,7 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
     public function getDebugInfo()
     {
-        return array (  318 => 117,  313 => 116,  307 => 115,  297 => 89,  291 => 88,  281 => 74,  278 => 73,  272 => 72,  245 => 93,  230 => 91,  228 => 88,  225 => 87,  223 => 86,  220 => 85,  203 => 84,  196 => 79,  181 => 77,  179 => 72,  176 => 71,  174 => 70,  171 => 69,  154 => 68,  139 => 55,  134 => 53,  126 => 47,  118 => 42,  110 => 37,  102 => 32,  86 => 19,  76 => 12,  70 => 8,  64 => 7,  49 => 3,  25 => 5,  18 => 4,  15 => 3,);
+        return array (  320 => 117,  315 => 116,  309 => 115,  299 => 89,  293 => 88,  283 => 74,  280 => 73,  274 => 72,  247 => 93,  232 => 91,  230 => 88,  227 => 87,  225 => 86,  222 => 85,  205 => 84,  198 => 79,  183 => 77,  181 => 72,  178 => 71,  176 => 70,  173 => 69,  156 => 68,  141 => 55,  137 => 53,  134 => 52,  126 => 47,  118 => 42,  110 => 37,  102 => 32,  86 => 19,  76 => 12,  70 => 8,  64 => 7,  49 => 3,  25 => 5,  18 => 4,  15 => 3,);
     }
 
     public function getSourceContext()
@@ -370,17 +372,17 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
                         <div class=\"row\">
                             <label for=\"colFormLabelSm\" class=\"col-sm-2 col-form-label col-form-label-sm\">Название</label>
 
-                            <div class=\"col-sm-5\">
+                            <div class=\"col-sm-12\">
                                 <input class=\"form-control form-control-sm\" id=\"title\" value=\"{{ product.title }}\">
                             </div>
 
                             <label for=\"colFormLabelSm\" class=\"col-sm-2 col-form-label col-form-label-sm\">Код товара</label>
-                            <div class=\"col-sm-5\">
+                            <div class=\"col-sm-12\">
                                 <input class=\"form-control form-control-sm\" id=\"code\" placeholder=\"000000\" value=\"{{ product.code }}\">
                             </div>
 
                             <label for=\"colFormLabelSm\" class=\"col-sm-5 col-form-label col-form-label-sm\">Количество на складе</label>
-                            <div class=\"col-sm-5\">
+                            <div class=\"col-sm-12\">
                                 <input class=\"form-control form-control-sm\" id=\"balance\" placeholder=\"0\" value=\"{{ product.balance }}\">
                             </div>
 
@@ -391,7 +393,7 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
                             <div class=\"col-sm-12 text-center\">
 
-                                {#<form name=\"test\">#}
+                                {#<form name=\"test\">#}#}
                                     <input type=\"submit\" class=\"btn btn-success my-2\" onclick=\"saveInfo( {{ product.id }})\" name=\"name\" value=\"Применить\" />
                                 {#</form>#}
 
@@ -399,7 +401,7 @@ class __TwigTemplate_519bbcf32adcb8073ec8fe336eb1376d9cbb723d473088b10c85030794f
 
                         </div>
                         <br/>
-                        <input type=\"checkbox\" id=\"hd-2\" class=\"hide\"/>
+                        <input type=\"checkbox\" checked=\"true\" id=\"hd-2\" class=\"hide\"/>
                         <label for=\"hd-2\" class=\"h3\">Технологическая карта</label>
                         <div>
                             <button type=\"button\" class=\"btn btn-success w-100\" data-toggle=\"dropdown\">
